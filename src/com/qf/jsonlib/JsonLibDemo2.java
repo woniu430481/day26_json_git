@@ -1,7 +1,8 @@
 package com.qf.jsonlib;
 
-import entity.Score;
-import entity.Student;
+
+import com.qf.entity.Score;
+import com.qf.entity.Student;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.junit.Test;
@@ -36,7 +37,7 @@ public class JsonLibDemo2 {
     public void testDemo2(){
         Score score = new Score(34,78);
         //2,复杂的对象
-        Student stu = new Student("woow",23,score);
+        Student stu = new Student("woow",23,"男",score);
         JSONObject jsonObject = new JSONObject(stu);
         System.out.println(jsonObject.toString());
 
