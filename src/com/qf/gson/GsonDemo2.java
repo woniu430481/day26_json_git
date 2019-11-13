@@ -7,6 +7,9 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 对象转字符串
+ */
 public class GsonDemo2 {
 
     @Test

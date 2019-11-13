@@ -7,8 +7,10 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 对象转json字符串
+ */
 public class FastJsonDemo2 {
-
 
     @Test
     public void test1(){
@@ -23,11 +25,14 @@ public class FastJsonDemo2 {
         Score score2 = new Score(34,65);
         list.add(score1);
         list.add(score2);
+
+        System.out.println("list:"+list);
+
+
         String str2 = JSON.toJSONString(list);
         System.out.println(str2);
 
 
     }
-
-
 }
+
